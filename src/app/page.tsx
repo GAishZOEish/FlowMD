@@ -253,6 +253,20 @@ export default function Home() {
                     <div style={{ textAlign: "right" }}><span style={{ color: "#c41230", fontSize: 16 }}>→</span></div>
                   </div>
                 </Link>
+                <Link href="/coverage-checker" className="tool-card" style={{ background: "#fff", border: "2px solid #c41230", padding: "28px", display: "flex", flexDirection: "column", gap: 12 }}>
+                  <h3 style={{ fontFamily: "var(--font-serif)", fontSize: 17, fontWeight: 400, color: "#0a1628", lineHeight: 1.3 }}>Coverage & Code Checker</h3>
+                  <p style={{ fontSize: 13, lineHeight: 1.75, color: "#6b7d99", fontFamily: "var(--font-sans)", flexGrow: 1 }}>Check if a CPT/ICD-10 combination is covered by the payer. Get alternative codes if not.</p>
+                  <div style={{ paddingTop: 12, borderTop: "1px solid #f0f0f0" }}>
+                    <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 8 }}>
+                      <span style={{ fontSize: 10, letterSpacing: "0.08em", textTransform: "uppercase", color: "#4caf82", fontFamily: "var(--font-sans)", border: "1px solid #4caf82", padding: "2px 8px" }}>No PHI required</span>
+                      <span style={{ fontSize: 10, letterSpacing: "0.08em", textTransform: "uppercase", color: "#6b7d99", fontFamily: "var(--font-sans)", border: "1px solid #dde3ed", padding: "2px 8px" }}>CPT & ICD-10</span>
+                      <span style={{ fontSize: 10, letterSpacing: "0.08em", textTransform: "uppercase", color: "#6b7d99", fontFamily: "var(--font-sans)", border: "1px solid #dde3ed", padding: "2px 8px" }}>Payer-specific</span>
+                      <span style={{ fontSize: 10, letterSpacing: "0.08em", textTransform: "uppercase", color: "#6b7d99", fontFamily: "var(--font-sans)", border: "1px solid #dde3ed", padding: "2px 8px" }}>Alternative codes</span>
+                      <span style={{ fontSize: 10, letterSpacing: "0.08em", textTransform: "uppercase", color: "#6b7d99", fontFamily: "var(--font-sans)", border: "1px solid #dde3ed", padding: "2px 8px" }}>Billing staff</span>
+                    </div>
+                    <div style={{ textAlign: "right" }}><span style={{ color: "#c41230", fontSize: 16 }}>→</span></div>
+                  </div>
+                </Link>
             </div>
           </div>
                 </div>
