@@ -1,0 +1,269 @@
+.sendPanel {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* PDF Button */
+.pdfBtn {
+  background: transparent;
+  border: 1px solid var(--ink);
+  padding: 10px 20px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all 0.15s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.pdfBtn:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* Email row */
+.emailRow {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.emailInputWrap {
+  flex: 1;
+  position: relative;
+}
+
+.emailInput {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--gold-light);
+  background: var(--white);
+  font-size: 13px;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease;
+}
+
+.emailInput:focus {
+  border-color: var(--ink);
+}
+
+.emailInput::placeholder {
+  color: var(--ink-muted);
+}
+
+/* Autocomplete suggestions */
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--ink);
+  border-top: none;
+  z-index: 100;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.suggestion {
+  display: block;
+  width: 100%;
+  padding: 9px 14px;
+  text-align: left;
+  font-size: 13px;
+  font-family: var(--font-sans);
+  color: var(--ink-light);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.suggestion:hover {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+/* Send button */
+.sendBtn {
+  padding: 10px 20px;
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sendBtn:hover:not(:disabled) {
+  background: var(--ink);
+}
+
+.sendBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sendBtnSoon {
+  background: var(--ink-muted) !important;
+  cursor: default !important;
+}
+
+.sendBtnSent {
+  background: var(--green) !important;
+}
+
+/* Notes */
+.patientNote {
+  font-size: 10px;
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+
+.manageBtn {
+  background: transparent;
+  border: none;
+  font-size: 11px;
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  text-decoration: underline;
+  letter-spacing: 0.03em;
+}
+
+.manageBtn:hover {
+  color: var(--ink);
+}
+
+/* Error / coming soon messages */
+.errorMsg {
+  font-size: 12px;
+  color: var(--red);
+  font-family: var(--font-sans);
+}
+
+.comingSoonMsg {
+  font-size: 11px;
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  padding: 10px 14px;
+  border: 1px solid var(--gold-light);
+  background: #fdf8f4;
+}
+
+/* Manage contacts panel */
+.managePanel {
+  border: 1px solid var(--gold-light);
+  padding: 16px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.managePanelHeader {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 4px;
+  font-family: var(--font-sans);
+}
+
+.noContacts {
+  font-size: 12px;
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.contactEmail {
+  font-size: 13px;
+  color: var(--ink-light);
+  font-family: var(--font-sans);
+}
+
+.removeBtn {
+  background: transparent;
+  border: none;
+  font-size: 11px;
+  color: var(--ink-muted);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  padding: 2px 6px;
+  text-decoration: underline;
+}
+
+.removeBtn:hover {
+  color: var(--red);
+}
+
+.addRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.addInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--gold-light);
+  background: var(--cream);
+  font-size: 12px;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  outline: none;
+}
+
+.addInput:focus {
+  border-color: var(--ink);
+}
+
+.addBtn {
+  padding: 8px 16px;
+  background: var(--ink);
+  color: var(--white);
+  border: none;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.addBtn:hover {
+  background: var(--gold);
+}
