@@ -93,6 +93,12 @@ export default function PriorAuthExplainerPage() {
               resultLabel="Prior Auth Analysis"
               disclaimer="Appeal timelines vary by payer and plan. Verify all deadlines directly with the payer before submitting an appeal."
               historyKey="prior-auth" />
+              <SendPanel
+                result={result}
+                resultLabel="Prior Auth Summary"
+                workflowName="Prior Auth Explainer"
+                isPatientFacing={false}
+              />
           </div>
         </div>
       </div>
