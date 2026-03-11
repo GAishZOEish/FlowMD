@@ -15,6 +15,7 @@ const WORKFLOWS = [
   { num: "07", label: "Referral Letter", href: "/referral-letter", group: "billing" },
   { num: "08", label: "Denial Reason Decoder", href: "/denial-decoder", group: "billing" },
   { num: "09", label: "Prior Auth Explainer", href: "/prior-auth-explainer", group: "billing" },
+  { num: "10", label: "Coverage & Code Checker", href: "/coverage-checker", group: "billing" },
 ];
 
 export default function WorkflowLayout({ children }: { children: React.ReactNode }) {
